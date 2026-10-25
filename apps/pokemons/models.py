@@ -4,14 +4,14 @@ from django.db import models
 
 class Pokemon(models.Model):
     TYPE_CHOICES = [
-        ('water', 'Water'),
-        ('fire', 'Fire'),
-        ('wind', 'Wind'),
-        ('light', 'Light'),
-        ('darkness', 'Darkness'),
-        ('lightning', 'Lightning'),
-        ('rock', 'Rock'),
-        ('nature', 'Nature'),
+        ('wr', 'Water'),
+        ('f', 'Fire'),
+        ('w', 'Wind'),
+        ('l', 'Light'),
+        ('d', 'Darkness'),
+        ('ln', 'Lightning'),
+        ('r', 'Rock'),
+        ('n', 'Nature'),
     ]
 
     name = models.CharField(max_length=50, unique=True)
